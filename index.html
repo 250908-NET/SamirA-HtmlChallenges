@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-<head> 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Exercise</title>
-
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+<head>
+  <meta charset="UTF-8" />
+  <title>Template Copy</title>
+  <link rel="stylesheet" href="main.css" />
 </head>
-
 <body>
+  <!-- Top bordered rectangle -->
+  <div class="hero-box">an image</div>
 
-    <div>
-        an image
-    </div>
+  <h1>About</h1>
+  <p>Some text about the website.</p>
 
-    <div> 
-        <h1>About</h1> 
-    </div>
-    <div>
-        <p> Some text about the website.</p>
-    </div>
+  <h2>Our Locations</h2>
+  <ul>
+    <li>USA
+      <ul>
+        <li><a href="#">New York</a></li>
+        <li><a href="#">Columbus</a></li>
+        <li><a href="#">Austin</a></li>
+        <li><a href="#">Philly</a></li>
+      </ul>
+    </li>
+    <li>World
+      <ul>
+        <li><a href="#">Ottawa</a></li>
+        <li><a href="#">Sydney</a></li>
+      </ul>
+    </li>
+  </ul>
 
-    <div>
-        <h2>Our Locations</h2>
-    </div>
-    <div>
-        <ul>
-            <li>
-                USA
-                <ul>
-                    <li>
-                        <a href="">New York</a>
-                    </li>
-                    <li><a href="">Columbus</a></li>
-                    <li><a href="">Austin</a></li>
-                    <li><a href="">Philly</a></li>
-                </ul>
-            </li>
-            <li>
-                World
-                <ul>
-                    <li><a href="">Ottawa</a></li>
-                    <li><a href="">Sydney</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+  <h2>Upcoming Classes</h2>
+  <table class="classes">
+    <tr>
+      <th>Location</th><th>Topic</th>
+    </tr>
+    <tr>
+      <td>New York</td><td>JavaScript &amp; jQuery</td>
+    </tr>
+    <tr>
+      <td>San Francisco</td><td>HTML &amp; CSS</td>
+    </tr>
+  </table>
 
+  <h2>Sign Up!</h2>
+  <form>
+    <div class="row">
+      <label>Name:</label>
+      <input type="text" />
+    </div>
+    <div class="row">
+      <label>Email:</label>
+      <input type="email" />
+    </div>
+    <div class="row">
+      <label>Location:</label>
+      <select>
+        <option>San Francisco</option>
+        <option>New York</option>
+        <option>Columbus</option>
+      </select>
+    </div>
+    <div class="row">
+      <label>Gender:</label>
+      <label><input type="radio" name="g" /> Female</label>
+      <label><input type="radio" name="g" /> Male</label>
+    </div>
+    <div class="row">
+      <label>Experience:</label>
+      <textarea rows="3" cols="35"></textarea>
+    </div>
+    <button type="button">Sign Up</button>
+  </form>
+
+  <p class="footer">
+    <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">Flickr</a>
+  </p>
 </body>
-
 </html>
-
