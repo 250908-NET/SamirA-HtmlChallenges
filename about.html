@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <link rel="stylesheet" href="about.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="boxed">About Me</header>
+
+  <!-- Part 1: paragraph -->
+  <section class="card">
+    <p>
+      Hi, I’m Majid. I enjoy building clean web apps and learning new tech.
+      Outside coding, I like fitness, chess, and languages.
+    </p>
+  </section>
+
+  <!-- Part 2: hobbies list (flex horizontally) -->
+  <section class="card">
+    <h2>Hobbies</h2>
+    <ul class="hobby-list">
+      <li>Surfing</li>
+      <li>Chess</li>
+      <li>Cooking</li>
+      <li>Hiking</li>
+    </ul>
+  </section>
+
+  <!-- Part 3: image -->
+  <section class="card">
+    <img src="https://picsum.photos/420/120" alt="me-ish">
+  </section>
+
+  <!-- Challenges V–VIII UI -->
+  <section class="card">
+    <h2>My Running List</h2>
+    <div class="controls">
+      <button id="btn-add-static">Add “Sample Item”</button>
+      <input id="item-input" placeholder="Type item..." />
+      <button id="btn-add-input">Add From Input</button>
+      <button id="btn-show-list">Show List</button>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <ul id="live-list"></ul>
+  </section>
+
+  <p><a href="index.html">← Back to template</a></p>
+</body>
+</html>
